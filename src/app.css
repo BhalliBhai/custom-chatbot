@@ -24,6 +24,7 @@ h1 {
 .react-chatbot-kit-chat-input {
   border: 1px solid black !important;
   border-bottom-left-radius: 7px !important;
+  width: 90%;
 }
 
 .react-chatbot-kit-chat-bot-message {
@@ -56,16 +57,12 @@ h1 {
   font-weight: 500;
 }
 
-
-
 /* ===== Scrollbar CSS ===== */
-/* Firefox */
 .react-chatbot-kit-chat-message-container {
   scrollbar-width: thin;
   scrollbar-color: #000000 #ffffff;
 }
 
-/* Chrome, Edge, and Safari */
 .react-chatbot-kit-chat-message-container::-webkit-scrollbar {
   width: 10px;
 }

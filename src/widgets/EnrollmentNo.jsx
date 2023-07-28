@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Button from "@material-ui/core/Button";
 
 //defination  of EnrollmentNo widget
 //all the mathod define in actionprovider and all states of widget are passed in props
@@ -126,14 +125,12 @@ const EnrollmentNo = (props) => {
           value={state.rollno}
           onChange={onchangeevent}
         />
-        <Button
-          variant="outlined"
-          color="primary"
+        <button
           className="btn btn-primary my-2 fw-bold"
           onClick={onsubmit}
         >
           submit
-        </Button>
+        </button>
       </form>
     </>
   );
