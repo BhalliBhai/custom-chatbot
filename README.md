@@ -1,86 +1,70 @@
-# Create Chatbot using React 
-## npm requirements
+# Getting Started with Create React App
 
-### `npm react-chatbot-kit`
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-using this feature you can add your chatbot in your project 
-go to
-[npm react-chatbot-kit](https://www.npmjs.com/package/react-chatbot-kit)
+## Available Scripts
 
-### `npm bootstrap`
+In the project directory, you can run:
 
-you can use bootstrap in your project for styling your page.
-for easy guide go to [npm bootstrap](https://www.npmjs.com/package/bootstrap)
+### `npm start`
 
-### `npm material-ui`
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-you can use material ui for easy documentation and effective representation
-for easy guide go to [npm material-ui core](https://www.npmjs.com/package/@material-ui/core).
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-### `npm jquery`
+### `npm test`
 
-you can use jquery for solve inbuilde jquery
-for easy guide go to [npm jquery](https://www.npmjs.com/package/jquery).
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## coding section
+### `npm run build`
 
-### [Config]
-this section is use for initialize chatbot configurations
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-<b>Properties:</b>
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-<b>botName - </b>defines the name of the bot
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-<b>customStyles -</b> object defining custom styles for different elements.
+### `npm run eject`
 
-<b>initialMessages -</b> defines an array of initial messages from the bot. Required property.
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-<b>state -</b> defines state you want to place into the chatbot component.
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-<b>customComponents -</b> you can define your own components and swap out the components that come with react-chatbot-kit by replacing them here.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-<b>widgets -</b> here you can define a list of widgets that you want to be able to render with a chatbot response.
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-### [Message Parser]
+## Learn More
 
-The message parser controls what happens when the user sends a message.
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-You have to implement this yourself. The beauty of this is that you can make the message parsing as complex or as simple as you'd like.
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-The only method that the message parser needs to implement is the "parse" method. This method is called inside the chatbot when it receives a message from the user.
+### Code Splitting
 
-### [Action Provider] 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-The actionprovider controls what kind of action that the chatbot is going to perform.
+### Analyzing the Bundle Size
 
-The actionprovider is given the createChatBotMessage and createClientMessage functions in the constructor, which you can use to create a new responses.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### [Widgets]
+### Making a Progressive Web App
 
-Widgets are custom components that you can render with chatbot messages.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-In order to use widgets, you need to register them in the config. Here you will define the following properties:
+### Advanced Configuration
 
-widgetName - defines the name of the widget
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-widgetFunc - define a function that returns the component. The function must take props and spread it into the component.
+### Deployment
 
-mapStateToProps - defines which state properties you defined in config should be injected into the widget component.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-props - option array of props you want to pass to your component.
+### `npm run build` fails to minify
 
-When the widget component is rendered it will receive the following props:
-
-actionProvider - the actionprovider class you have defined, so you can trigger other actions from your custom components.
-
-setState - setState function that can manipulate the top level chatbot state.
-
-scrollIntoView - helper function to scroll content into view when doing asynchronous calls, use in combination with useEffect when updating to state to ensure that the chat window is scrolled to bottom.
-
-[state] - any piece of state you defined in the mapStateToProps section of the config.
-
-[props] - any piece of props you defined in the props section of the config.
-
-[You can check all the Widgets in the widgets Folder]
-
-
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

@@ -1,117 +1,38 @@
-/*
-basic css propery for change height ,width, color and other styling
-if you want to change view of chatbot than you can override class css as per your requirement
-*/
-body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.App {
+  text-align: center;
 }
 
-#root {
-  height: 100vh;
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
 
-h1 {
-  font-family: Roboto;
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
 
-.react-chatbot-kit-chat-container {
-  width: 100% !important;
-  height: auto;
-}
-
-.react-chatbot-kit-chat-message-container {
-  background-color: #F5F5F5;
-  height: 420px;
-  overflow-x: hidden;
-}
-
-.react-chatbot-kit-chat-input {
-  border: 1px solid black !important;
-  border-bottom-left-radius: 7px !important;
-}
-
-.react-chatbot-kit-chat-bot-message {
-  margin-left: 0 !important;
-  margin-right: auto !important;
-  max-width: 50% !important;
-  width: -webkit-fit-content!important;
-  width: -moz-fit-content!important;
-  width: fit-content!important;
-}
-
-.react-chatbot-kit-chat-input-container {
-  position: relative;
-}
-
-.react-chatbot-kit-user-chat-message {
-  background-color: #AAB5B7;
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
   color: white;
-  max-width: 50%;
 }
 
-.react-chatbot-kit-user-chat-message-arrow {
-  border-top: 8px solid transparent;
-  border-bottom: 8px solid transparent;
-  border-left: 8px solid #AAB5B7;
+.App-link {
+  color: #61dafb;
 }
 
-.react-chatbot-kit-chat-bot-avatar-letter {
-  margin: auto;
-  font-weight: 500;
-}
-
-
-
-/* ===== Scrollbar CSS ===== */
-/* Firefox */
-.react-chatbot-kit-chat-message-container {
-  scrollbar-width: thin;
-  scrollbar-color: #000000 #ffffff;
-}
-
-/* Chrome, Edge, and Safari */
-.react-chatbot-kit-chat-message-container::-webkit-scrollbar {
-  width: 10px;
-}
-
-.react-chatbot-kit-chat-message-container::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.react-chatbot-kit-chat-message-container::-webkit-scrollbar-thumb {
-  background-color: rgb(0, 0, 0, 0.5);
-  border-radius: 20px;
-  border: 3px solid #ffffff;
-}
-
-.list-button {
-  margin-left: 10px !important;
-}
-
-.student-form-input {
-  margin-left: 20px;
-}
-
-h5 .creator-name {
-  color: #010080;
-  font-weight: 500;
-}
-
-.form-control {
-  max-width: 50%;
-  width: fit-content;
-  border: 1px solid #010080;
-}
-
-.btn-primary {
-  color: #010080 !important;
-  border: 1px solid #010080 !important;
-}
-
-.btn-primary:focus,
-.btn-primary:hover {
-  color: white !important;
-  background: #010080 !important;
-  outline: none !important;
-  box-shadow: none;
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
