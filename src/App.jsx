@@ -40,7 +40,7 @@ function App() {
             </div>
             <footer className="col-12">
               <hr />
-              <h5 className="text-center py-2">Designed & Developed By: <span className="creator-name">Bhalli</span> </h5>
+              <h5 className="text-center py-2">Designed & Developed By: <a href="mailto:bhallibhai69@gmail.com" className="creator-name">Bhalli</a> </h5>
             </footer>
           </div>
         </div>
